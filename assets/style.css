@@ -1,0 +1,71 @@
+:root {
+    --light-pink: #d37dcc; 
+    --standard-spacing: 1rem;
+}
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* set width to body and html to contain all items */
+html, body {
+    width: 100%;
+}
+form {
+    width: 40%;
+    margin: 2rem auto 0rem;
+}
+div.form-group {
+    margin-bottom: var(--standard-spacing);
+}
+p.text-right {
+    margin-bottom: 0 ;
+}
+#todo_list {
+    width: 40%;
+    padding: 0;
+    margin: 0rem auto;
+}
+#todo_item {
+    width: 100%;
+    text-align: center;
+}
+.todo_div {
+    font-size: 20px;
+    padding: var(--standard-spacing) var(--standard-spacing) 0 var(--standard-spacing);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--light-pink);
+    margin-bottom: var(--standard-spacing);
+}
+.btn-outline-danger, .btn-outline-success {
+    border: none;
+    outline: none;
+    margin-top: -1rem;
+}
+.far {
+    font-size: 15px;
+}
+.btn-outline-success:focus, .btn-outline-success:active {
+    background-color: initial;
+    color: #5cb85c;
+    border-color: transparent;
+    box-shadow: none;
+}
+.done {
+    /* makes font bold when check btn clicked */
+    font-weight: bold;
+    /* puts line through text on check button click */
+    text-decoration: line-through;
+}
+.done-div {
+    background-color: var(--light-pink);
+}
+@media screen and (max-width: 414px) {
+    form, #todo_list {
+        width: 90%;
+    }
+}
